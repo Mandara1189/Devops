@@ -1,0 +1,90 @@
+ls-List of all files and directories in present working directory
+pwd-present working directory
+cd-change directory
+clear-to clear screen
+mkdir-to create new directory
+touch-to create new file
+ls -l -long list of files and directories
+ls -lt -Long list with recently creted file in top
+ls -lrt -long list with reverse time
+ls *.txt- List all the files with perticulr file format
+ll-long list with more information
+rm filename -remove or delete the file
+rm -rf directoryname- to delete directory
+vi filename -to edit file
+Shift+I -To insert in edit file
+esc:wq! -save and quit
+esc:%s/pattern1/pattern2/g -Find and replace
+echo -to print 
+cat filename -content of file
+wc -l filename -count of lines
+wc -w filename - count of words
+wc -c filename -count of characters
+history- list the history of commonds executed
+> -redirect: used to write output of command to a file. If file alrdy exist it will over writes in it.
+>> -append-Instead of over writing it will add to next line
+free- used to check the RAM memory
+free -m - disply in megabytes and -g for GB
+df -h -to check the disk space
+du -sh Directoryname- Disk usage for perticular directory
+du -sh * -Gives size of both files and directories
+touch file{1..5}.txt- To create multiple files at once
+head -n filename- used to display n line of file
+tail -n filename- used to display last n line in file
+| - pipe - used to give output of one command to next command
+grep "word" filename - Pattern search in specified line of file
+-i -case sensitive
+grep -c "30" filename- perticular character
+grep -w "word" filename- perticular word
+grep -l -R "word" filename- To list all the command with perticular pattern
+grep "^p" filename -to check the line starting with perticular letter
+grep "s$" filename -to check the line ending with perticular letter
+cp filename1 filename2 -copy to file
+chmod 777 filename - for file permission
+chmod -R 777 directory - for permission directory. -R for permission of all the files and sub directories in the directory
+chmod u+x,g+x,o+x filename- direct permission
+umask- used to set defult permission for a system
+umask 000 -whoever create a file have full permission for a system
+mv file.txt rename.txt- to move or rename file
+sed's/pattern1/pattern2/g' filename- find and replace
+sed -i 's/pattern1/pattern2/g'-changes will reflect in file
+sed '2,$s/patttern1/pattern2/g' -to change from 2nd line to end
+sed -n '5p' filename- to print perticular line
+sed -n '3d' filename- to delete perticular line
+cut -d " " -f2 filename- To print perticular column
+awk -F " " '{print $1}' filename- same like cut to perint perticular column
+ps -ef- list of PID of all process running in system
+kill- To kill perticular PID
+ps -u username- list of process running with perticular user name
+sudo service tomcat start- to start the perticular service
+sudo service tomcast stop- to stop perticular service
+find . -name "filename"- to find path for file
+su -username- to switch other user
+ln -s linkname- to craete soft link
+ln linkname- to create hard link
+whoami- to check which user you logged in
+ls -a- to find hidden file
+ls -i*- to find all file
+lsof-opened file
+ls -i- inode of file
+ssh- to login remote server
+ping google.com- to check server is accessable or not
+hostname- to review the hostname(domain and IP address) of the machine and to set the hostname
+ifconfig-to display network configuration
+netstat-display network connection
+traceroute-network tracer
+top-cpu usage, load avarage, cpu statics
+crontab -l- to list
+crontab -e- to edit
+scriptname &- to run command in background
+$?- to check the status of last executed command
+$$- It will show the process ID of the current running process
+$!- It will give the process ID of the last process running in background
+$*- All the arguments passed to the script
+$#- Total number of argument passed to the script
+useradd username-to create user
+password_name- to give password
+uniq- To print unique details
+sort- to sort in ascending order
+sort -r-sort in revers order
+
