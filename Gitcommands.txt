@@ -1,0 +1,37 @@
+git init- Initialize an existing directory as a git repository
+git clone url- Retrieve an entire repository from a hosted location via url
+git status-show modified file in working directory,staged for your next commit
+git add filename-add a file from workspace to staging area
+git reset filename- unstage a file
+git diff-diff of what is changed but not staged
+git diff --staged- diff of what is staged but not yet committed
+git commit -m "commit message"- commit your staged content as a new commit snapshot
+git config --global user.name username- set a name that is identifiable fir credit when review verision history
+git config --global user.email emailid- set an email addess that wil be associated with each history marker
+git config --global color.ui auto- set automatic command line colouring for git for easy reviewing
+git branch-list your branches
+git branch branchname - create new branch
+git checkout- switch to other branch
+git checkout -b branchname- to create new branch and switch to it
+git branch -d branchname- to delete branch
+git merge branchname- merge the specified branch's history into the current one
+git log- show all commits in the current branch's history
+git log--oneline- to list log in single line
+git log branchB..branchA- show the commits on branchA that is not in branchB
+git log --follow [file]- show the commits that changed file even across renames
+git diff branchB..branchA- show the diff of what is in branchA that is not in branchB
+git show [SHA]- show any abject in got in human readable format
+git rm filename- delete the file from project and stage the removal for commit
+git mv existing-path new-path-change an existing file path and stage the move
+git log --stat -M- show all commit logs with indication of any paths that moved
+git remote add [alias] [url]-add a git url as an alias
+git fetch [alias]- fetch down all the branches from that git remote
+git merge [alias]/[branch]- merge a remote branch into your current branch to bring it up to date
+git push [alias] [branch]-transmit local branch commits to the remote repository branch
+git pull- fetch and merge any commits from the tracking remote branch
+git rebase [branch]- apply any commits of current branch ahead of specified one
+git reset --hard[ commit]- clear staging area, rewrite working tree from specified commit
+git stash- save modified and staged changes
+git stash list- list stack-order of stashed file changes
+git stash pop- write working from top of stash stack
+git stash drop- discard the changes from top of stash stack
