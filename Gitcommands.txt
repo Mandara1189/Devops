@@ -35,3 +35,8 @@ git stash- save modified and staged changes
 git stash list- list stack-order of stashed file changes
 git stash pop- write working from top of stash stack
 git stash drop- discard the changes from top of stash stack
+git cherry-pick commitid- act of commit from a branch and applying it to another.
+git commit --amend- to change commit massge after committed
+git clean -fdx- To clean unwanted command
+git revert commitid- To revert the commited file
+
